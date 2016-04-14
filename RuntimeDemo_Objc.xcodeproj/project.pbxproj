@@ -15,6 +15,7 @@
 		E0BE5E4F1CBE32550084978A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0BE5E4D1CBE32550084978A /* LaunchScreen.storyboard */; };
 		E0BE5E5A1CBE32550084978A /* RuntimeDemo_ObjcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BE5E591CBE32550084978A /* RuntimeDemo_ObjcTests.m */; };
 		E0BE5E651CBE32550084978A /* RuntimeDemo_ObjcUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BE5E641CBE32550084978A /* RuntimeDemo_ObjcUITests.m */; };
+		E0BE5E751CBE327E0084978A /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BE5E741CBE327E0084978A /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		E0BE5E601CBE32550084978A /* RuntimeDemo_ObjcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RuntimeDemo_ObjcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0BE5E641CBE32550084978A /* RuntimeDemo_ObjcUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeDemo_ObjcUITests.m; sourceTree = "<group>"; };
 		E0BE5E661CBE32550084978A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0BE5E731CBE327E0084978A /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		E0BE5E741CBE327E0084978A /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		E0BE5E3E1CBE32550084978A /* RuntimeDemo_Objc */ = {
 			isa = PBXGroup;
 			children = (
+				E0BE5E721CBE32610084978A /* Moder */,
 				E0BE5E421CBE32550084978A /* AppDelegate.h */,
 				E0BE5E431CBE32550084978A /* AppDelegate.m */,
 				E0BE5E451CBE32550084978A /* ViewController.h */,
@@ -138,6 +142,15 @@
 				E0BE5E661CBE32550084978A /* Info.plist */,
 			);
 			path = RuntimeDemo_ObjcUITests;
+			sourceTree = "<group>";
+		};
+		E0BE5E721CBE32610084978A /* Moder */ = {
+			isa = PBXGroup;
+			children = (
+				E0BE5E731CBE327E0084978A /* Person.h */,
+				E0BE5E741CBE327E0084978A /* Person.m */,
+			);
+			name = Moder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +285,7 @@
 			files = (
 				E0BE5E471CBE32550084978A /* ViewController.m in Sources */,
 				E0BE5E441CBE32550084978A /* AppDelegate.m in Sources */,
+				E0BE5E751CBE327E0084978A /* Person.m in Sources */,
 				E0BE5E411CBE32550084978A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,6 +427,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = RuntimeDemo_Objc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.luosai.RuntimeDemo-Objc";
@@ -424,6 +439,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = RuntimeDemo_Objc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.luosai.RuntimeDemo-Objc";
